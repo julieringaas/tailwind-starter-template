@@ -1,9 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .herobackground {
-    background-image: url("img/bg2.jpg");
+@layer base {
+  html {
+    font-family: "Assistant";
   }
+
+  /* h1 {
+    font-size: 2.5rem;
+    line-height: 1.618;
+    font-family: "Assistant";
+    font-weight: 700;
+  } */
+
+  @layer components {
+    .herobackground {
+      background-image: url("img/bg2.jpg");
+    }
+  }
+}
+
+.bold {
+  font-variation-settings: "wght" 800;
+}
+
+.thin {
+  font-variation-settings: "wght" 200;
 }
