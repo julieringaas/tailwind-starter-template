@@ -18,15 +18,17 @@
 
   <div class="navbar">
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl normal-case">TYPOGRAFI</a>
+      <a class="btn btn-ghost text-xl normal-case text-white">TYPOGRAFI</a>
     </div>
     <div class="flex-none">
       <ul class="menu menu-horizontal p-0">
-        <li><a>Om fonten</a></li>
         <li tabindex="0"></li>
 
-        <li><a>Prosessen</a></li>
-        <li><a>Variationer</a></li>
+        <li class="snap-x text-white">
+          <a href="index.html#processen">Processen</a>
+        </li>
+
+        <li class="text-white"><a href="index.html#varianter">Varianter</a></li>
       </ul>
     </div>
   </div>
@@ -37,61 +39,70 @@
     <script type="module" src="index.js"></script>
 
     <div
-      class="card card-side -2 absolute ml-96 h-4/5 w-2/5 justify-center overflow-hidden"
+      class="card card-side -2 absolute ml-40 h-4/5 w-3/5 justify-center overflow-hidden"
     >
       <div class="carousel carousel-vertical h-full w-52">
         <div class="carousel-item">
-          <img class="mr-4 w-96" src="./img/o_outlined_black.png" alt="o" />
+          <img class="mr-4 w-96" src="./img/o_outlined.png" alt="o" />
         </div>
         <div class="carousel-item w-52">
-          <img src="./img/r_outlined_black.png" alt="r" />
+          <img src="./img/r_outlined.png" alt="r" />
         </div>
         <div class="carousel-item w-52">
-          <img src="./img/a_outlined_black.png" alt="a" />
+          <img src="./img/a_outlined.png" alt="a" />
         </div>
         <div class="carousel-item w-52">
-          <img src="./img/n_outlined_black.png" alt="n" />
+          <img src="./img/n_outlined.png" alt="n" />
         </div>
         <div class="carousel-item w-52">
-          <img src="./img/g_outlined_black.png" alt="g" />
+          <img src="./img/g_outlined.png" alt="g" />
         </div>
         <div class="carousel-item w-52">
-          <img src="./img/e_outlined_black.png" alt="e" />
+          <img src="./img/e_outlined.png" alt="e" />
         </div>
         <div class="carousel-item">
-          <img src="./img/s_outlined_black.png" alt="s" />
+          <img src="./img/s_outlined.png" alt="s" />
         </div>
       </div>
       <!-- <figure>
         <img class="mr-4 w-52" src="./img/g_orange.png" alt="g" />
       </figure> -->
       <div>
-        <h2 class="mb-5 pt-44 text-6xl font-extrabold text-black">Orange</h2>
-        <p class="text-thin w-56 justify-end text-xs text-black">
+        <h2 class="mb-5 mt-24 text-6xl font-extrabold text-white">Orange</h2>
+        <p class="text-thin w-56 justify-end text-xs text-white">
           Oranges er en font der tager udgangspunkt i runde former - ligesom
           appelsiner. Der findes to varianter af fonten: en regulær og en light
           version. Light versionen er en tynd font med et minimalistisk udtryk,
-          mens den regulære egner sig til headings og bryder designet op.
+          mens den regulære egner sig til headings og bryder designet op. Hold
+          pilen over bogstavet til venstre, og scroll ned for at se flere
+          bogstaver.
         </p>
         <div class="justify-end"></div>
       </div>
     </div>
 
-    <!-- <div class="herobackground -mt-96 min-h-[150vh] bg-cover"></div> -->
-    <div class="-mt-20 min-h-[100vh] bg-white"></div>
+    <div class="herobackground -mt-52 min-h-[150vh] bg-cover"></div>
+    <!-- <div class="-mt-20 min-h-[100vh] bg-white"></div> -->
 
-    <h1 class="text-7xl">Varianter</h1>
-    <p class="text-xs">Det er lavet tre forskellige varianter av fonten</p>
+    <h1 class="ml-72 mt-10 text-7xl" id="varianter">Varianter</h1>
+    <p class="ml-72 max-w-screen-sm text-xs">
+      Der er 3 forskellige varianter af skrifttypen, som alle kan bruges på
+      forskellige måder. Udgaverne udspringer af originalen som er den tykke
+      variant. Scroll ned for at se de forskellige varianter.
+    </p>
     <img src="./img/original.png" alt="original" />
     <img src="./img/outlined.png" alt="outlined" />
     <img src="./img/light.png" alt="light" />
 
-    <h1 class="text-7xl">Prosessen</h1>
-    <p class="text-xs">Det er lavet tre forskellige varianter av fonten</p>
+    <h1 class="ml-72 mt-10 text-7xl" id="processen">Processen</h1>
+    <p class="ml-72 mb-10 max-w-screen-sm text-xs">
+      Nedenfor finder du processen med at udvikle skrifttypen. Scroll til højre
+      for at se udviklingen fra skitse til fintegning.
+    </p>
 
     <!-- Carousel start -->
 
-    <div class="carousel rounded-box h-64">
+    <div class="carousel mb-40 h-40">
       <div class="carousel-item">
         <img src="./img/7.png" alt="prosess" />
       </div>
@@ -120,13 +131,10 @@
 
   <!-- footer start  -->
 
-  <footer class="footer footer-center bg-primary text-primary-content p-10">
-    <div class="grid grid-flow-col gap-4">
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
-    </div>
+  <footer
+    class="footer footer-center bg-neutral-focus text-primary-content p-10"
+  >
+    <div class="grid grid-flow-col gap-4"></div>
     <div>
       <div class="grid grid-flow-col gap-4">
         <a
@@ -168,7 +176,11 @@
       </div>
     </div>
     <div>
-      <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+      <p class="text-xs">
+        Dette er et projekt udarbejdet i forbindelse med min uddannelse på
+        Copenhagen School of Design and Technology. Kontakt:
+        juli62j7@stud.kea.dk
+      </p>
     </div>
   </footer>
 
